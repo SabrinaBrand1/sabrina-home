@@ -2,30 +2,39 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sabrina Brand - Psicóloga</title>
 <style>
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 40px;
   color: #333;
+  margin: 0;
+}
+.header {
+  text-align: center;
+  padding: 40px 20px;
+}
+.header img {
+  max-width: 250px;
+  border-radius: 8px;
 }
 h1 {
   font-size: 2em;
-  margin-bottom: 10px;
 }
 p {
   font-size: 1.1em;
 }
 .buttons {
-  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 .buttons a {
-  display: inline-block;
   padding: 15px 25px;
   margin: 10px;
   font-size: 1em;
+  font-weight: bold;
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
@@ -33,23 +42,58 @@ p {
 .whatsapp { background-color: #25D366; }
 .instagram { background-color: #E1306C; }
 .email { background-color: #007BFF; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+.gallery img {
+  max-width: 250px;
+  margin: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
 .footer {
-  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
   font-size: 0.9em;
-  color: #555;
+  color: #777;
 }
 </style>
 </head>
 <body>
-<h1>Sabrina Brand - Psicóloga</h1>
-<p>Seja bem‑vindo(a). Atendimentos online e presenciais.</p>
+
+<!-- TOPO -->
+<div class="header">
+  <img src="EF2FE5D4-0F1C-4D9B-B51A-49A77219B003.jpeg" alt="Sabrina Brand">
+  <h1>Sabrina Brand - Psicóloga</h1>
+  <p>Seja bem‑vindo(a). Atendimentos online e presenciais.</p>
+</div>
+
+<!-- BOTÕES DE CONTATO -->
 <div class="buttons">
   <a class="whatsapp" href="https://wa.me/5521972655440" target="_blank">Fale comigo no WhatsApp</a>
   <a class="instagram" href="https://www.instagram.com/psi_sabrinabrand" target="_blank">Me siga no Instagram</a>
   <a class="email" href="mailto:sabrinaebrand@gmail.com">Envie‑me um e‑mail</a>
 </div>
+
+<!-- GALERIA DE FOTOS -->
+<div class="gallery">
+  <img src="ECDEC897-81A8-4DC6-B0B3-7BB2EB13AB05.jpeg" alt="Sabrina Brand">
+  <img src="ABBA1340-F047-4B07-BA66-58519D755ACD.jpeg" alt="Sabrina Brand">
+  <img src="6BF7E366-E406-463F-9572-8349629842C4.jpeg" alt="Sabrina Brand">
+  <img src="440E0BCA-82D4-425E-AABA-7CDD8F102C14.jpeg" alt="Sabrina Brand">
+  <img src="7333F5A4-2E93-4CC5-9A6D-4AA1579CFFF8.jpeg" alt="Sabrina Brand">
+  <img src="94A5556E-2EA0-48E2-BC55-E9C73920C356.jpeg" alt="Sabrina Brand">
+  <img src="440DF05A-834C-4CAA-9BBB-4E2E49611399.jpeg" alt="Sabrina Brand">
+</div>
+
+<!-- RODAPÉ -->
 <div class="footer">
   &copy; 2025 Sabrina Brand - Todos os direitos reservados
 </div>
+
 </body>
 </html>
