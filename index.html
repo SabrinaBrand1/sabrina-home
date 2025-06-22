@@ -8,7 +8,7 @@
   <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -19,10 +19,11 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #f0f2f5, #e8ecf1);
+      background: #f8fafc;
       color: #2d3748;
     }
 
+    /* Navegação */
     nav {
       background: #ffffff;
       position: fixed;
@@ -57,6 +58,7 @@
       color: #805ad5;
     }
 
+    /* Container */
     .container {
       max-width: 960px;
       margin: 120px auto 60px auto;
@@ -65,6 +67,14 @@
 
     section {
       margin-bottom: 80px;
+    }
+
+    /* Início */
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .header img {
@@ -76,17 +86,20 @@
       margin-bottom: 20px;
     }
 
-    h1, h2 {
+    .header h1 {
       font-weight: 700;
-      color: #2d3748;
+      font-size: 2rem;
       margin-bottom: 10px;
+      color: #2d3748;
     }
 
-    p {
+    .header p {
       font-size: 1.1rem;
       color: #4a5568;
+      margin: 0 0 30px 0;
     }
 
+    /* Botões */
     .buttons {
       display: flex;
       justify-content: center;
@@ -113,6 +126,7 @@
     .email { background: #3182ce; }
     .agendar { background: #805ad5; }
 
+    /* Rodapé */
     .footer {
       text-align: center;
       font-size: 0.9rem;
@@ -120,15 +134,18 @@
       padding: 40px 0;
     }
 
+    /* Responsivo */
     @media (max-width: 768px) {
-      nav ul {
+      .buttons {
         flex-direction: column;
         align-items: center;
+      }
+      nav ul {
+        flex-wrap: wrap;
       }
     }
   </style>
 </head>
-
 <body>
 
   <!-- MENU -->
@@ -143,7 +160,6 @@
     </ul>
   </nav>
 
-  <!-- CONTEÚDO -->
   <div class="container">
 
     <!-- INÍCIO -->
@@ -156,8 +172,7 @@
     <!-- SOBRE -->
     <section id="sobre">
       <h2>Sobre</h2>
-      <p>Sou Sabrina Brand, Psicóloga Clínica e Neuropsicóloga, com atuação pautada na empatia, acolhimento e ética profissional. Atendo adultos, adolescentes e crianças, tanto no formato presencial quanto online. Minha missão é oferecer um espaço seguro de escuta e reflexão, promovendo saúde mental, bem-estar e desenvolvimento pessoal.</p>
-      <p>Tenho formação sólida e atualização constante em psicologia clínica e avaliação neuropsicológica, com experiência em contextos clínicos, escolares e institucionais. Meu trabalho é orientado por princípios científicos e humanos, respeitando a singularidade de cada indivíduo.</p>
+      <p>Sou psicóloga clínica com especialização em neuropsicologia. Tenho paixão por ajudar pessoas a se conhecerem melhor, enfrentarem desafios emocionais e alcançarem uma vida com mais equilíbrio e bem-estar. Meu trabalho é pautado na escuta acolhedora, ética e comprometimento com o desenvolvimento humano.</p>
     </section>
 
     <!-- SERVIÇOS -->
@@ -175,7 +190,7 @@
     <!-- REFLEXÕES -->
     <section id="reflexoes">
       <h2>Reflexões</h2>
-      <p>Espaço para compartilhar textos e pensamentos sobre saúde mental, autoconhecimento, empatia, e bem-estar emocional.</p>
+      <p>Espaço para compartilhar textos e pensamentos sobre saúde mental, autoconhecimento, empatia e bem-estar emocional.</p>
     </section>
 
     <!-- CONTATO -->
@@ -194,7 +209,7 @@
     <div class="footer">
       &copy; 2025 Sabrina Brand – Todos os direitos reservados
     </div>
-  </div>
 
+  </div>
 </body>
 </html>
