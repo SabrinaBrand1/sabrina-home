@@ -22,17 +22,15 @@
       padding: 0;
       color: #2c3e50;
       line-height: 1.6;
-
-      /* 🎨 BACKGROUND PROFISSIONAL */
       background: radial-gradient(circle at top center, #f0f4fb 0%, #d6e2f1 35%, #e6e9f0 100%);
       background-attachment: fixed;
     }
 
     .container {
-      max-width: 700px;
+      max-width: 900px; /* AUMENTADO para caber os 3 botões */
       margin: 60px auto 40px auto;
       padding: 40px 30px 50px 30px;
-      background-color: #ffffffcc; /* leve transparência */
+      background-color: #ffffffcc;
       backdrop-filter: blur(6px);
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
       border-radius: 16px;
@@ -74,14 +72,14 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 14px 28px;
+      padding: 14px 24px;
       border-radius: 30px;
       font-weight: 600;
       font-size: 1rem;
       text-decoration: none;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: all 0.3s ease;
-      min-width: 220px;
+      min-width: 240px; /* Reduzido um pouco para caber lado a lado */
     }
 
     .buttons a i {
@@ -121,12 +119,15 @@
       color: #95a5a6;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
+      .buttons {
+        flex-direction: column;
+        gap: 16px;
+      }
       .buttons a {
         min-width: 100%;
         justify-content: center;
       }
-
       .container {
         margin: 30px 15px;
         padding: 30px 20px;
@@ -146,13 +147,13 @@
 
     <div class="buttons">
       <a class="whatsapp" href="https://wa.me/5521972655440" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
+        <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
       <a class="instagram" href="https://www.instagram.com/psi_sabrinabrand" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-instagram"></i> Me siga no Instagram
+        <i class="fab fa-instagram"></i> Instagram
       </a>
       <a class="email" href="mailto:sabrinaebrand@gmail.com" rel="noopener noreferrer">
-        <i class="fas fa-envelope"></i> Envie‑me um e‑mail
+        <i class="fas fa-envelope"></i> E‑mail
       </a>
     </div>
 
